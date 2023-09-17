@@ -21,18 +21,18 @@ En este proyecto, puedes utilizar los siguientes scripts definidos en el archivo
 -   **start**: Inicia el proyecto compilando y ejecutando la aplicación.
 
     ```bash
-    npm start
+    bun start
     ```
 
 -   **dev**: Ejecuta el proyecto en modo de desarrollo con observación de cambios.
 
     ```bash
-    npm run dev
+    bun dev
     ```
 
 -   **compile**: Compila el proyecto y crea una versión optimizada para producción.
     ```bash
-    npm run compile
+    bun compile
     ```
 
 ## Instalación
