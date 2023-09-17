@@ -1,0 +1,32 @@
+{
+    "name": "bun-product-api",
+    "module": "src/index.ts",
+    "type": "module",
+    "version": "0.1.0",
+    "description": "La API de Gestión de Productos con Bun, DDD y TDD es una solución que busca mostrar como se desempeña el toolkit Bun.sh. Diseñada y construida con tecnologías modernas y las mejores prácticas de desarrollo, esta API proporciona una base sólida y escalable para tus proyectos.",
+    "author": "David Ernesto <dhernandez@elasbit.com>",
+    "keywords": [
+        "bun",
+        "typescript",
+        "DDD",
+        "TDD"
+    ],
+    "scripts": {
+        "start": "bun compile && bun run:start",
+        "dev": "bun . --watch",
+        "compile": "bun run clear:build && bun run build",
+        "build": "bun build ./src --outdir ./build --splitting --minify --target=bun",
+        "run:start": "bun run ./build/src/index.js",
+        "clear:build": "rm -rf build"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "bun-types": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}
